@@ -1,0 +1,240 @@
+.container {
+    width: 60%;
+    display: flex;
+    margin: 60px auto;
+}
+
+.menu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: rgba(227, 230, 238, 0.567);
+}
+
+.menu > menu{
+    margin-top: 100px;
+    position: relative;
+    height: 100%;
+}
+
+.menu > menu > ul {
+    list-style: none;
+}
+
+.menu > menu > ul >  a, option > a{
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+option > a {
+    margin-left: 40px;
+    padding: 20px 0;
+    color: rgb(119, 119, 119)
+}
+
+option > a:hover {
+    color: rgb(78, 78, 78)
+}
+
+details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+} 
+
+details > summary {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    border-radius: 20px;
+    transition: 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+details::marker {
+    display: none;
+}
+
+details > summary::marker {
+    display: none;
+}
+
+details > summary > li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu > menu > ul > a > li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.menu-icons {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icons > i {
+    font-size: 1.5rem;
+}
+
+
+
+.info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0 60px;
+}
+
+.foto-perfil {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+    z-index: 0;
+    border-radius: 100%;
+    width: 170px !important;
+    height: 170px !important;
+}
+
+.foto-perfil > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    transition: .05s ease-in-out;
+}
+
+
+.edit {
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    margin: auto;
+    z-index: 1;
+}
+
+.edit > label > i {
+    font-size: 30px;
+    color: #c4c4c483;
+}
+
+.foto-perfil > img:hover ~ .edit {
+    display: block;
+}
+
+.foto-perfil > img:hover{
+    filter: brightness(0.6) blur(2px);
+}
+
+.dados > span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.info > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+.info > form > h2 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #A62C37;
+}
+
+.info > form > input, .inputs > input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(227, 230, 238, 0.567);
+}
+
+.nome-sobrenome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.labels {
+    display: flex;
+    gap: 46%;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inputs > input {
+    width: 49%;
+}
+
+.info > form > input:focus, .inputs > input:focus {
+    outline: 1px solid #A62C37;
+}
+
+.info > form > label, .labels > label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    align-self: flex-start;
+}
+
+.info > form > .enviar {
+    background-color: #A62C37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    width: 50%;
+    justify-self: center;
+    font-weight: 900;
+}

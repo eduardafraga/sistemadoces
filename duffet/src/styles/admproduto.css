@@ -1,0 +1,256 @@
+.container {
+    width: 60%;
+    display: flex;
+    margin: 60px auto;
+}
+
+.menu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: rgba(227, 230, 238, 0.567);
+}
+
+.menu > menu{
+    margin-top: 100px;
+    position: relative;
+    height: 100%;
+}
+
+.menu > menu > ul {
+    list-style: none;
+}
+
+.menu > menu > ul >  a, option > a{
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+option > a {
+    margin-left: 40px;
+    padding: 20px 0;
+    color: rgb(119, 119, 119)
+}
+
+option > a:hover {
+    color: rgb(78, 78, 78)
+}
+
+details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+} 
+
+details > summary {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    border-radius: 20px;
+    transition: 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+details::marker {
+    display: none;
+}
+
+details > summary::marker {
+    display: none;
+}
+
+details > summary > li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu > menu > ul > a > li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.menu-icons {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icons > i {
+    font-size: 1.5rem;
+}
+
+.info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.info > div > h2 {
+    align-self: flex-start;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #A62C37;
+}
+
+
+.pages {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    height: 65vh;
+}
+
+.pages > ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.pages label {
+    width: 140px;
+    border: 1px solid rgb(172, 63, 63);
+    border-radius: 9px;  
+    background-color: rgb(246, 246, 246);
+    padding: 9px 20px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    transition: 0.1s ease-in-out;
+}
+
+.pages label:hover {
+    background-color: #d69da2;
+    color: white;
+    cursor: pointer;
+}
+
+.page:checked ~ label {
+    background-color: rgb(172, 63, 63);
+    color: #FFFFFF;
+}
+
+.page{
+    display: none;
+}
+
+.page:checked ~ .newproddiv {
+    display: flex;
+}
+
+.page:checked ~ .showproddiv {
+    display: block;
+}
+
+.newproddiv, .showproddiv {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.newproddiv, .update-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pages > ul > li > div > form, .update-form > form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.pages > ul > li > div > form > input, select, .update-form > form > input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(227, 230, 238, 0.567);
+}
+
+.pages > ul > li > div > form > button, .update-form > form > button {
+    background-color: #A62C37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    width: 50%;
+    align-self: center;
+    font-weight: 900;
+}
+
+.pages > ul > li > div > form > button:hover, .update-form > form > button:hover {
+    background-color: #7f1d25;
+}
+
+.showproddiv {
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 550px;
+}
+
+.showproddiv > table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(172, 63, 63);
+}
+
+.showproddiv > table > thead {
+    background-color: rgb(172, 63, 63);
+    color: white;
+}
+
+.showproddiv > table > thead > tr > th {
+    padding: 10px 20px;
+}
+
+
+.showproddiv > table > tbody > tr > td {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(172, 63, 63);
+}

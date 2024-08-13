@@ -1,0 +1,122 @@
+.tipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.tipos > ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.tipos > ul > li > button
+{
+    width: 140px;
+    border: 1px solid rgb(172, 63, 63);
+    border-radius: 9px;  
+    background-color: rgb(246, 246, 246);
+    padding: 9px 20px;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    transition: 0.1s ease-in-out;
+}
+
+.tipos > ul > li > button:hover {
+    background-color: #d69da2;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(172, 63, 63) !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.main-container {
+    width: 80%;
+    margin: auto;
+}
+
+.main-container > h2 {
+    color: rgb(172, 63, 63);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding-left: 40px;
+    border-bottom: 2px solid rgb(172, 63, 63);
+    width: fit-content;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(227, 230, 238, 0.457);
+    width: 300px;
+}
+
+.produto > img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.produto > h3 {
+    color: rgb(172, 63, 63);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.produto > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.produto > span{
+    color: rgb(92, 43, 43);
+    align-self: flex-start;
+    font-weight: 700;
+}
+
+.produto > div > span {
+    color: rgb(92, 43, 43);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.produto > div > button {
+    width: 80px;
+    border: none;
+    border-radius: 9px;  
+    background-color: rgb(172, 63, 63);
+    padding: 6px 8px;
+    font-weight: 600;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+.produto > div >  button:hover {
+    background-color: #c5545d;
+    cursor: pointer;
+}

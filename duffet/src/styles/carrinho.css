@@ -1,0 +1,118 @@
+.main-container {
+    width: 80%;
+    margin: 60px auto ;
+    display: flex;
+    gap: 20px;
+    min-height: 38.5vh;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 70%;
+    align-items: start;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(227, 230, 238, 0.323);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    width: 70%;
+}
+
+.quantidade {
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 63, 63);
+    padding: 5px;
+    background-color: rgb(172, 63, 63);
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.quantidade:focus {
+    outline: none;
+}
+
+.produto > div > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.image {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto > button, .pagamento > button {
+    width: 10%;
+    border: none;
+    border-radius: 9px;
+    background-color: rgb(172, 63, 63);
+    color: white;
+    font-weight: 900;
+    padding: 9px 10px;
+    cursor: pointer;
+}
+
+.produto > button:hover, .pagamento > button:hover {
+    background-color: rgb(192, 67, 67);
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(227, 230, 238, 0.323);
+}
+
+.pagamento > h2 {
+    color: rgb(172, 63, 63);
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+
+.pagamento > span {
+    align-self: flex-end;
+    margin-block-end: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(124, 47, 47);
+}
+
+.pagamento > button {
+    width: 100%;
+}
+
+.formas-pagamento {
+    margin-block: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.formas-pagamento > i {
+    font-size: 2rem;
+    color: rgb(48, 49, 49);
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+section > h2 {
+    color: rgb(172, 63, 63);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+section > span {
+    margin: 0 0 50px 5px;
+    color: rgb(92, 43, 43);
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(227, 230, 238, 0.567);
+}
+
+
+textarea {
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(100, 40, 40);
+}
+
+.enviar {
+    background-color: rgb(172, 63, 63);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    width: 50%;
+    justify-self: center;
+    font-weight: 900;
+}
+
+.enviar:hover {
+    background-color: rgb(196, 77, 77);
+    color: white;
+    cursor: pointer;
+}
